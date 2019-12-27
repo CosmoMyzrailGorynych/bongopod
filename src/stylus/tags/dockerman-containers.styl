@@ -1,0 +1,28 @@
+dockerman-containers
+    display block
+    table
+        min-width 100%
+    margin-bottom 2rem
+
+.aContainer
+    @extends .aCard
+    display grid
+    grid-template-columns \[first\] 2.25rem \[name\] 2.5fr \[image\] 3fr \[status\] 2fr \[ports\] 3fr \[actions\] 11rem \[last\]
+    grid-gap 1rem
+.aContainer-anIcon, .aContainer-aName, .aContainer-anImage,
+.aContainer-aStatus, .aContainer-Ports, .aContainer-Actions
+    grid-row 1
+    align-self center
+
+.aContainer-anIcon
+    font-size 1.5rem
+
+.aContainer-aName
+    h3
+        margin-bottom 0
+
+ .aContainer-Logs, .aContainer-aTerminal
+    grid-row 2
+    grid-column first / last
+    pre
+        max-height 15rem

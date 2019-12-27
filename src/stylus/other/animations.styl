@@ -1,0 +1,16 @@
+@keyframes rotate-cw
+    0%
+        transform rotate(0deg)
+    100%
+        transform rotate(360deg)
+@keyframes rotate-ccw
+    0%
+        transform rotate(0deg)
+    100%
+        transform rotate(-360deg)
+.rotate, rotate-cw
+    animation rotate-cw 1s linear infinite
+.rotatehover:hover, .rotatehovercw:hover
+    animation rotate-ccw 0.5s ease 1
+.rotatehoverccw:hover
+    animation rotate-ccw 0.5s ease 1

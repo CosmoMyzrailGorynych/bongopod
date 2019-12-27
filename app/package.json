@@ -1,0 +1,14 @@
+{
+    "name": "bongopod",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "start": "electron ."
+    },
+    "author": "Cosmo Myzrail Gorynych aka CoMiGo Games",
+    "license": "ISC",
+    "devDependencies": {
+        "electron": "^7.1.7"
+    }
+}

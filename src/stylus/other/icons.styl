@@ -1,0 +1,26 @@
+icon(icon = 'slash', color = $accent)
+    background unquote(
+        replace('currentColor', replace(
+            '#', '%23', (''+color)
+        ), embedurl('./../icons/'+icon+'.svg', 'utf8'))
+    ) center center / contain
+
+.feather, .icon, .iconify
+    width 1.5em
+    height 1.5em
+    vertical-align -0.35em
+    color $accent
+    h1 &, h2 &
+        vertical-align middle
+    & + span
+        margin-left 0.5em
+
+.icon
+    stroke none
+    fill currentColor
+.feather
+    stroke currentColor
+    stroke-width 2
+    stroke-linecap round
+    stroke-linejoin round
+    fill none

@@ -1,0 +1,26 @@
+button, .button
+    display inline-block
+    background $lightAccent
+    color $darkAccent
+    {shad}
+    cursor pointer
+    padding 0.5rem 1rem
+    margin 0 1rem 0.5rem 0
+    font inherit
+    border-radius $br
+    border 1px solid mix($accent, $lightAccent, 10%)
+    box-sizing border-box
+    .icon, .feather
+        color $darkAccent
+
+.ghostlyButton
+    display inline-block
+    cursor pointer
+    padding 0.5rem
+    margin 0
+    border-radius $br
+    {trans}
+    &:hover, &:focus, &.active
+        background rgba($lightAccent, 0.5)
+    &:active
+        background $lightAccent

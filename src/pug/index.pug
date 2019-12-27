@@ -1,0 +1,15 @@
+doctype html
+html
+    head
+        title BongoPod
+        meta(charset='utf-8')
+        meta(name='description', content='IDE')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        link(href='data/bundle.css' id="themeCSS" rel='stylesheet')
+    body.maximized
+        root-tag
+        script(src="data/bundle.js")
+        script.
+            'use strict';
+            window.signals = window.signals || riot.observable({});
+            riot.mount('*');
